@@ -330,7 +330,7 @@ try:
         else:
             speed_display = f"{internet_speed} Mbps"
         
-        complaint = f"Hi @JioCare, I'm on the ₹349/month plan but my internet speed is only {speed_display} Mbps instead of the expected {SPEED_THRESHOLD}+ Mbps. Kindly look into this issue and resolve it soon. Thank you. #Jio #InternetIssue"
+        complaint = f"Hi @JioCare, I'm on the ₹349/month plan but my internet speed is only {speed_display} instead of the expected {SPEED_THRESHOLD}+ Mbps. Kindly look into this issue and resolve it soon. Thank you. #Jio #InternetIssue"
         
         compose_and_post_tweet(complaint)
         
@@ -370,4 +370,5 @@ finally:
     try:
         driver.quit()
     except:
+
         pass
